@@ -1,3 +1,12 @@
+## Notes-app-client
+### 1/30/2019
+#### David Eliason
+
+## What
+Front-side client for serverless note-taking app.
+
+
+#######
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
