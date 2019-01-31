@@ -34,7 +34,9 @@ class App extends Component {
     this.setState({ isAuthenticated: authenticated });
   }
 
-  handleLogout = event => {
+  handleLogout = async event => {
+    await Auth.signOut();
+  
     this.userHasAuthenticated(false);
   }
 
@@ -55,17 +57,18 @@ class App extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-  {this.state.isAuthenticated
-     ? <NavItem onClick={this.handleLogout}>Logout</NavItem>
-     : <Fragment>
-      <LinkContainer to="/signup">
-        <NavItem>Signup</NavItem>
-      </LinkContainer>
-      <LinkContainer to="/login">
-        <NavItem>Login</NavItem>
-      </LinkContainer>
-    </Fragment>
-}
+
+              {this.state.isAuthenticated
+                ? <NavItem onClick={this.handleLogout}>Logout</NavItem>
+                : <Fragment>
+                  <LinkContainer to="/signup">
+                    <NavItem>Signup</NavItem>
+                  </LinkContainer>
+                  <LinkContainer to="/login">
+                    <NavItem>Login</NavItem>
+                  </LinkContainer>
+                </Fragment>
+            }
             </Nav>
           </Navbar.Collapse>
         </Navbar>
