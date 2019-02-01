@@ -7,6 +7,7 @@ import {
 } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import "./Signup.css";
+import { Auth } from "aws-amplify";
 
 export default class Signup extends Component {
   constructor(props) {
