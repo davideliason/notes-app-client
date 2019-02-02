@@ -12,6 +12,25 @@ export default class Home extends Component {
     };
   }
 
+  async componentDidMount() {
+    if (!this.props.isAuthenticated) {
+      return;
+    }
+  
+    try {
+      const notes = await this.notes();
+      this.setState({ notes });
+    } catch (e) {
+      alert(e);
+    }
+  
+    this.setState({ isLoading: false });
+  }
+  
+  notes() {
+    return API.get("notes", "/notes");
+  }
+
   renderNotesList(notes) {
     return null;
   }
