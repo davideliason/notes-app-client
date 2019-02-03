@@ -9,7 +9,7 @@ Front-side client for serverless note-taking app.
 - created S3 bucket and uploaded build production of react app
 
 ## to Visit live version:
-[rexrobotix.com](http://rexrobotix.com/)
+[rexrobotix.com](http://www.rexrobotix.com/)
 
 
 #######
