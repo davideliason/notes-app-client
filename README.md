@@ -9,7 +9,7 @@ Front-side client for serverless note-taking app.
 - created S3 bucket and uploaded build production of react app
 
 ## to Visit live version:
-[Live version](http://360enlight-notes.s3-website-us-east-1.amazonaws.com/)
+[rexrobotix.com](http://rexrobotix.com/)
 
 
 #######
