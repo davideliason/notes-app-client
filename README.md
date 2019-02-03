@@ -5,6 +5,12 @@
 ## What
 Front-side client for serverless note-taking app.
 
+## Notes
+- created S3 bucket and uploaded build production of react app
+
+## to Visit live version:
+[Live version](http://360enlight-notes.s3-website-us-east-1.amazonaws.com/)
+
 
 #######
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
